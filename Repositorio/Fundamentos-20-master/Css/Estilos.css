@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(\Fondo_Suarez.jpg);
+  }
+  .parent {
+    border: 2px black dotted;
+    display: inline-block;
+  }
+  .box {
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+  }
+  #titulos {
+    color: #3341ff;
+    font-size: 24px;
+  }
+  #palabras {
+     color:#9018d0;
+     font-size: 18px;
+    }
+    #subtitulos {
+        color:#d018b4;
+        font-size: 24px;
+  }
+  #resaltados {
+    color:#d01858;
+    font-size: 24px;
+    
+  }
+  #fondo {
+    color:#d09018;
+    font-size: 24px;
+  }
+.nav{
+    width: 100%;
+    background-color: #9018d0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+.logo{
+    font-size: 25px;
+    color: #000;
+    font-weight: 100;
+}
+.menu li{
+   display: flex;
+}
+.menu li a{
+    list-style: none;
+   margin: 10px;
+}
+.menu li a{
+   color: #d09018;
+   text-decoration: none; 
+   font-weight: bold;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color:#3341ff;
+    border-radius: 15px;
+}
