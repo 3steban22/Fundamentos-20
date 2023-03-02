@@ -1,0 +1,104 @@
+*{
+padding: 0;
+margin: 0;
+}
+h1{
+    text-align: center ;
+    background-color:#0693e3;
+    color: white;
+    padding: 35px;
+}
+nav ul{
+    background-color: #8b8c8b;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+nav li :hover{
+    background-color: #476280;
+
+}
+.Contenido{
+    display: flex;
+    margin: 60px;
+}
+.Articulos{
+    width: 80%;
+    border-right: 3px solid black;
+}
+.Secciones{
+    align-items: center;
+    padding: 10px;
+}
+.Menu-secundario{
+     width: 20% ;
+     margin-top: 60px;
+}
+.Menu-secundario a {
+    display: block;
+    text-align: center;
+    color: black;
+    margin-bottom: 60px;
+    margin-left: 60px;
+}
+.imagen-1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 5px;
+    
+}
+.imagen-2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 40px;
+    
+}
+.imagen-3{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 40px;
+    
+}
+.cont-img{
+    display: flex;
+    justify-content: center;
+}
+.est{
+    width: 350px;
+    height: 280px;
+    justify-content: center;
+}
+#hh{
+    margin-left: 5px;
+    justify-content: center;
+    margin-left: 10px;
+}
+#alt:hover{
+    color: #0693e3;
+}
+footer{
+    width:  100%;
+    height: 200px;
+    background-color: #0693e3;
+    color: white;
+    margin: 0px;
+}
+footer p{
+    text-align: center;
+    padding: 50px;
+}
