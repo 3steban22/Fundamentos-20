@@ -1,0 +1,672 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Esteban Ibarra Largo</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="33f15f17-e641-4ace-9b05-184c13cd0bc5" class="page sans"><header><img class="page-cover-image" src="https://media.licdn.com/dms/image/C5616AQGt7ge0OCLIXA/profile-displaybackgroundimage-shrink_350_1400/0/1644367313842?e=1681948800&amp;v=beta&amp;t=SehBUjNK2Skb5ZJEBbnLC6C4DxihjfN6Acha4DE5fBk" style="object-position:center 39.239999999999995%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://avatars.githubusercontent.com/u/86747068?v=4"/></div><h1 class="page-title">Esteban Ibarra Largo</h1></header><div class="page-body"><blockquote id="24e9fa13-c7fd-49b6-9d9d-3c0ce9a3ef21" class="">I’am a system engineering student at the Antonio Jose Camacho University specializing in the Java language, with knowledge in Python, HTML, CSS</blockquote><h1 id="7df657b1-d34a-4ded-a877-259992638fc1" class="">Work Experience</h1><h3 id="c9d2c650-c8bd-4c67-b6e1-bf697f1c3168" class=""><details open=""><summary>Variedades los Gemelos</summary></details></h3><div class="indented"><p id="bcd8b2d7-2406-48cf-9512-12a5dc4240b7" class="">Duration: Six years</p><p id="26f077cf-7ccc-4123-8a2c-23e2e47c1a12" class="">Role in the Company: Supervising Manager</p><p id="994b29b0-2b4d-47b0-ba04-c60866b9c02b" class="">Work for six years in customer management, personnel management, coordination.</p></div><h3 id="f70a5c3e-6316-49a6-b59d-7be817aac0ee" class=""><details open=""><summary>Voluntariado Cruz Roja</summary></details></h3><div class="indented"><p id="2c79fbb8-8cd5-4f50-a229-f07525c357a4" class="">Duration: Five years </p><p id="8e843b67-511e-4561-a87d-ef31179366a8" class="">Role in the Company: Teacher first aid</p><p id="e0cafd2f-35a1-40ca-9b9c-56dc4dd071ae" class="">teaching first aid to children aged six to twelve.</p></div><h1 id="114a57e5-017f-40a6-878f-f8eeadf61872" class="">Education</h1><div id="15103dc5-66d2-421b-bcba-ab157d2a8902" class="column-list"><div id="a8ec42a9-5115-4c23-bf11-0647d4580cea" style="width:50%" class="column"><h2 id="308975ca-d8fc-4534-bb68-33398d222336" class=""><details open=""><summary>Finalized</summary></details></h2><div class="indented"><h3 id="7e7cb9d1-e506-4b78-b90f-6ff6a4be7075" class=""><details open=""><summary>Tecnico en Sistema</summary></details></h3><div class="indented"><p id="44974011-9eb4-4926-86c4-381ae6745460" class="">Completed in 2020 with the SENA </p></div><h3 id="018c72b0-aa8b-4418-8032-c9d765c23698" class=""><details open=""><summary>Bachillerato</summary></details></h3><div class="indented"><p id="3e9e3b66-4590-4ab8-b208-eb43a2b6cafb" class="">Completed in 2020</p></div><h3 id="6265673d-ab2d-47a1-973c-cafb132b7905" class=""><details open=""><summary>Cursos</summary></details></h3><div class="indented"><ul id="57fa43bf-cf02-4fa0-a34f-db9132877c28" class="bulleted-list"><li style="list-style-type:disc"><strong>Curso de Emprendimiento para Jóvenes</strong></li></ul><ul id="ad5872f5-ffe8-4ceb-9fbf-e82433acfda6" class="bulleted-list"><li style="list-style-type:disc"><strong>Curso de Entrevistas Periodísticas</strong></li></ul><ul id="3251d43d-7eda-4f74-8385-53fe688708da" class="bulleted-list"><li style="list-style-type:disc"><strong>Curso de Estrategias para Aprender en Línea Efectivamente</strong></li></ul><ul id="589e28c2-1973-4a57-acd0-d76e3f226a2b" class="bulleted-list"><li style="list-style-type:disc"><strong>Curso de Diseño Universal del Aprendizaje: Las Diversas Formas de Aprender</strong></li></ul><ul id="64368f75-bd7d-4862-a959-7ac4095d323f" class="bulleted-list"><li style="list-style-type:disc"><strong>Curso de Sistemas de Diseño</strong></li></ul><p id="22baf6ff-5aa1-451a-a890-ab4d7606e137" class="">
+</p></div></div></div><div id="8bec97e0-5304-4f35-af86-1fb52e2408e5" style="width:50%" class="column"><h2 id="136637cf-24ce-4038-8666-a52f0a6c9288" class=""><details open=""><summary>Current</summary></details></h2><div class="indented"><h3 id="d0922d32-b3d0-4a10-87c6-6c5ff898b15f" class=""><details open=""><summary>Ingeniería en Sistema</summary></details></h3><div class="indented"><p id="a5f7703f-da8f-4a8a-90c9-2419e1611359" class="">Started in the 2021 period second</p></div></div></div></div><h1 id="e52e2826-4e73-49ac-8ccd-08932d229e24" class="">Skills</h1><h3 id="7f1097a1-c768-4217-9b69-7447a76c60f4" class=""><details open=""><summary>Various</summary></details></h3><div class="indented"><p id="8bcad577-a8c5-4d77-a56a-6e06212168bf" class="">Administrative management.</p><p id="b90cec7e-ef32-4ac6-8cea-4775e43d721e" class="">Control and organization of computer desktops.</p><p id="2f5ab83d-98d4-4f2f-9a72-16f23537c974" class="">Management of organizational platforms.</p><p id="88541fcb-40fd-4951-a365-aa31c8cbe089" class="">Programming logic.</p><p id="5e584015-6e28-46c1-819b-67aeebf9e63c" class="">Version control.</p></div><div id="a5e4230a-63f2-40fd-a2b6-d2b323b9d116" class="column-list"><div id="3502aca9-38b4-4760-b614-dea39a98197c" style="width:50%" class="column"><h3 id="e1c8fc9a-2768-4145-9c86-9058f89e4c1a" class=""><details open=""><summary>Technologies</summary></details></h3><div class="indented"><p id="3f96cfc4-2219-496d-a2f7-ff876361ed82" class="">JAVA</p><p id="07a2c7ec-5d28-4713-82bb-e77fc6c95b4e" class="">HTML</p></div></div><div id="7fb9ff4a-a583-4b29-8755-c23d41c6fb71" style="width:50%" class="column"><h3 id="4f37fc7b-4879-40a3-9601-2bc9d6dbef1b" class=""><details open=""><summary>Lenguages</summary></details></h3><div class="indented"><p id="8fbfb4b6-6767-4e0e-ae75-3a728183a73f" class="">Español</p><p id="b455d880-f596-40ec-91ef-84eac7576ead" class="">Ingles A2</p></div></div></div><h1 id="1728f719-f2c8-45ee-a5b3-8dd0deca2fb6" class="">Contact Information</h1><div id="2894739f-6f84-40d0-9e69-170a2c942c92" class="column-list"><div id="ed6ac7ae-c608-459c-928e-7810f0d9bab1" style="width:30.43478260869565%" class="column"><h3 id="12b8c997-e1bb-451f-8c01-cf2f5938172a" class="block-color-purple">🐾 Git Hub</h3><figure class="block-color-purple callout" style="white-space:pre-wrap;display:flex" id="ede138ab-01f6-4e0c-b2b8-787d1d7b26bc"><div style="font-size:1.5em"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></div><div style="width:100%"><strong><a href="https://github.com/3steban22">3steban22</a></strong></div></figure><h3 id="e6256bf1-e34b-4951-80dc-aa53d608c31e" class="block-color-red">📣 Linkedin</h3><figure class="block-color-red callout" style="white-space:pre-wrap;display:flex" id="fd4a0499-88a2-4318-92fc-4a89af070cb4"><div style="font-size:1.5em"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/></div><div style="width:100%"><a href="https://www.linkedin.com/in/esteban-ibarra-largo-5766b2197/"><strong>Esteban Ibarra Largo</strong></a></div></figure></div><div id="c3728752-3f55-4899-97ea-f347a0680b58" style="width:34.782608695652186%" class="column"><h3 id="11e5ecdb-a35c-4e57-8ccd-cafb375ac7b0" class="block-color-yellow">📷 Instagram</h3><figure class="block-color-yellow callout" style="white-space:pre-wrap;display:flex" id="c3c356f5-b3a3-41ee-8ab0-1b02f4cff5c8"><div style="font-size:1.5em"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"/></div><div style="width:100%"><strong><a href="https://www.instagram.com/3steban_ibarra">3steban_ibarra</a></strong></div></figure><h3 id="9834d54c-4745-43a2-9b58-039860bf53ba" class="block-color-blue">🦜Twitter</h3><figure class="block-color-blue callout" style="white-space:pre-wrap;display:flex" id="0898f660-618a-492b-b058-c09d3ae83fde"><div style="font-size:1.5em"><img class="icon" src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png"/></div><div style="width:100%"><strong><a href="https://twitter.com/L3Ibarra">L3ibarra</a></strong></div></figure></div><div id="e6205ca4-ba21-4aae-a4d4-32fadf1dce9a" style="width:34.78260869565217%" class="column"><h3 id="0fea3f27-1c28-462d-9a98-439399e16864" class="block-color-teal">📨 Mail</h3><figure class="block-color-teal callout" style="white-space:pre-wrap;display:flex" id="d8409d54-7d7d-45e5-b6d0-413209eb7067"><div style="font-size:1.5em"><img class="icon" src="data:image/jpeg;base64,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"/></div><div style="width:100%"><strong><a href="https://mail.google.com/">3steban22ibarra@gmail.com</a></strong></div></figure><h3 id="6fe16cf4-6ca7-4f29-b742-625edf254c21" class="block-color-teal">📞 Phone</h3><figure class="block-color-teal callout" style="white-space:pre-wrap;display:flex" id="e6968c9a-0952-48f0-91ba-fccc2c24d9ed"><div style="font-size:1.5em"><span class="icon">🇨🇴</span></div><div style="width:100%">+57 3135217723</div></figure><p id="17568a9b-7b04-4be6-b481-d3791b91f4fd" class="">
+</p></div></div><p id="8009e329-fc4a-4456-8cfe-76f9adc40a36" class="">
+</p></div></article></body></html>
