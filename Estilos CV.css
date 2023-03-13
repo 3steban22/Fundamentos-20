@@ -11,13 +11,13 @@ html {
 
 html,
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0.1%;
+	padding: 0.1%;
     background: #ccf2e9;
 }
 @media only screen {
 	body {
-		margin: 2em auto;
+		margin: 1.3em auto;
 		max-width: 900px;
 		color: rgb(55, 53, 47);
 	}
@@ -25,7 +25,7 @@ body {
 
 body {
 	line-height: 1.5;
-	white-space: pre-wrap;
+	white-space: normal;
 }
 
 a,
@@ -49,9 +49,9 @@ h3 {
 }
 
 .page-title {
-	font-size: 10.5rem;
+	font-size: 1.5rem;
 	font-weight: 700;
-	margin-top: 0;
+	margin-top: 10%;
 	margin-bottom: 0.75em;
 }
 
@@ -136,11 +136,8 @@ img {
 }
 
 .columna {
-    
 	padding: 0 1em;
-    
-    width:33.333333333333336%
-
+    width:34%
 }
 
 .columna:first-child {
@@ -316,8 +313,7 @@ time {
 	opacity: 0.5;
 }
 .cuerpo-cabecera{
-    
-    margin:0;
+    margin:0.1;
 }
 .icon {
 	display: inline-block;
@@ -328,38 +324,36 @@ time {
 	margin-right: 0.5em;
 }
 .icono-foto {/*Caracteristicas de la foto con su tamaño y otros*/
-	max-width: 15.2em;
+	max-width: 4em;
 	max-height: 15.2em;
 	text-decoration: none;
-    
 	vertical-align: text-bottom;
 	margin-right: 0.5em;
-    
    position: relative;
-   width:85%
+   display: flex;
+   
 
 }
 img.icono-foto{ /*Posicion de la imagen*/
-    position:absolute;
-    top:73%;
-    left:62%;
-    bottom:0%;
-    right:120%;
+	
+    top: 73%;
+    left: 45%;
+    bottom: 50%;
+    right: 90%;
 }
 .page-header-icon {
-    
 	font-size: 1.5rem;
-	margin-bottom: 1rem;
-    margin-top: -0.72em;
-    margin-left: 0.07em;
-    width:85%
+	margin-bottom: 0.9rem;
+    margin-top: -1.2em;
+    margin-left: 0.7em;
+    width:55%
 }
 .page-header-icon img {
 	border-radius: 360px; /*Redondea la imagen*/
 }
 
 img.icon {
-	border-radius: 3px;
+	border-radius: 30px;
 }
 
 .user-icon {
@@ -370,14 +364,13 @@ img.icon {
 }
 
 .user-icon-inner {
-	font-size: 0.8em;
+	font-size: 10.8em;
 }
 
 .text-icon {
 	border: 1px solid #000;
 	text-align: center;
 }
-
 .imagen-cabecera {
 	display: block;
 	object-fit: cover;
@@ -386,19 +379,12 @@ img.icon {
     object-position:center 40%
    
 }
-
-
-
-
-
-
 .link-to-page {
 	margin: 1em 0;
 	padding: 0;
 	border: none;
 	font-weight: 500;
 }
-
 p > .user {
 	opacity: 0.5;
 }
@@ -459,22 +445,23 @@ code {
 
 blockquote {
 	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
+	margin: 3em;
+	padding-left: 0.1em;
+	border-left: 5px solid rgb(55, 53, 47);
+	display: flex;
 }
 
 .bookmark {
 	text-decoration: none;
 	max-height: 8em;
-	padding: 0;
+	padding: 10;
 	display: flex;
-	width: 100%;
+	width: 50%;
 	align-items: stretch;
 }
 
 .bookmark-title {
-	font-size: 0.85em;
+	font-size: 10.85em;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	height: 1.75em;
@@ -669,6 +656,7 @@ blockquote {
 .block-color-red_background {
 	background: rgba(253, 235, 236, 1);
 }
+/*
 .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
 .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
 .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
@@ -679,7 +667,7 @@ blockquote {
 .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
 .select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
 .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-
+*/
 .checkbox {
 	display: inline-flex;
 	vertical-align: text-bottom;
@@ -689,12 +677,3 @@ blockquote {
 	margin-left: 2px;
 	margin-right: 5px;
 }
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
